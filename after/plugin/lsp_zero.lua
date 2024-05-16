@@ -37,3 +37,21 @@ lspconfig.lua_ls.setup {
 -- Setup clangd
 lspconfig.clangd.setup{}
 
+-- Setup pyright
+lspconfig.pyright.setup{
+    settings = {
+        pyright = {
+            disableLanguageServices = false,
+            disableOrganizeImports = false,
+            disableTaggedHints = false,
+        },
+        python = {
+            analysis = {
+                autoImportCompletions = true,
+                autoSearchPaths = true,
+                diagnosticMode = "openFilesOnly",
+            }
+        }
+    }
+}
+
