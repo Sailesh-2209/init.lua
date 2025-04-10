@@ -1,6 +1,7 @@
 vim.opt.guicursor = ""
 
-vim.cmd.colorscheme("catppuccin-mocha")
+vim.opt.background = "dark"
+vim.cmd.colorscheme("gruvbox")
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
